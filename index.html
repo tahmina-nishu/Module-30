@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .highlighted{
+            font-size: 16px;
+            color:crimson;
+        }
+        .headline{
+            background-color: rgb(12, 152, 12);
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h2 class="headline text-xl font-semibold">Module : 30-1</h2>
+<!-- -------------- Note -------------- -->
+    <section class="add_event">
+        <h3 class="text-xl font-semibold">More about js -- ></h3>
+        <ul>
+          <li>1. const diye kono variable nile seta pore reassine kora jay na. <br> Samevabe kono array k const diye nile o reassign kora jabena kintu array er specific index er value change kora jabe. <br> (i)   <span class="highlighted">const numbers = [10, 20, 30, 40]; <br> numbers[2] = 80;</span> is valid  <br> (ii) <span class="highlighted">const number = 10; <br> number = 80;</span> is invalid</li>
+      </ul> 
+    </section>
+
+
+    
+    <!-- Note er script  -->
+    <script>
+        const events = document.querySelectorAll('section');
+        for(item of events)
+        {
+            item.style.backgroundColor = "lavender";
+            item.style.borderRadius = "10px";
+            item.style.padding = "10px";
+            item.style.margin = "10px";
+        }
+  
+        const spans = document.getElementsByClassName('red-text');
+        for(span of spans)
+        {
+            span.style.fontSize = '18px';
+            span.style.color = 'Crimson';
+        }
+    </script>
+    
+</body>
+</html>
